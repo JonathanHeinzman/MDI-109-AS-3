@@ -10,6 +10,7 @@ import Combine // MVVM Pattern
 
 @MainActor
 class RNMViewModel: ObservableObject {
+    
     // 1. - Get the character
     // 2. - Set them to Variables for the UI
     // 3. - CATCH ANY ERRORS
@@ -31,27 +32,9 @@ class RNMViewModel: ObservableObject {
             
         } catch {
             
-            errorMessage = "Error: \(error.localizedDescription)"
-            
+            errorMessage = error.localizedDescription
         }
         
         isLoading = false
-        
-        
-        
-        
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
